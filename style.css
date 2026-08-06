@@ -189,21 +189,63 @@ footer p {
 
 /*MEDIA QUERIES*/
 @media (max-width: 600px) {
-    .card {
-        width: 90%;
+
+    body {
         padding: 20px;
     }
 
+    .card {
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
     h1 {
-        font-size: 30px;
+        font-size: 26px;
+        line-height: 1.2;
     }
 
     header>h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input {
+        height: 38px;
+        font-size: 14px;
+    }
+
+    #registrar {
+        width: 100%;
+        height: 42px;
+    }
+
+    #mensagem {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #tema {
+        margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 90%;
     }
 }
 
