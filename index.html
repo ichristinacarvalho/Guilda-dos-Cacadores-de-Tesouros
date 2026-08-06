@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/treasure-map.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <title>Liga dos Exploradores</title>
+</head>
+
+<body>
+
+    <div class="card">
+        <header>
+            <h1>Guilda dos Caçadores de Tesouros</h1>
+
+            <h2>Sua jornada começa aqui!</h2>
+
+            <p>Antes de partir para sua primeira missão, registre seu acampamento para que possamos enviar mapas e
+                recompensas.</p>
+
+            <button type="button" id="tema">🌙</button>
+        </header>
+
+        <main>
+            <h2>Ficha do Aventureiro</h2>
+
+            <form>
+                <label for="nome">Nome do aventureiro:</label>
+                <input id="nome" name="nome" type="text" placeholder="Ex: João" required>
+
+                <label for="cep">CEP:</label>
+                <input id="cep" name="cep" type="text" placeholder="Ex: 68785-000" required maxlength="9">
+
+                <label for="rua">Rua:</label>
+                <input id="rua" name="rua" type="text" placeholder="Preenchido automaticamente" readonly>
+
+                <label for="bairro">Bairro:</label>
+                <input id="bairro" name="bairro" type="text" placeholder="Preenchido automaticamente" readonly>
+
+                <label for="cidade">Cidade:</label>
+                <input id="cidade" name="cidade" type="text" placeholder="Preenchido automaticamente" readonly>
+
+                <label for="estado">Estado:</label>
+                <input id="estado" name="estado" type="text" placeholder="Preenchido automaticamente" readonly>
+
+                <button type="button" id="registrar">Registrar Explorador</button>
+            </form>
+
+            <h2>Registro de Aventureiros </h2>
+            <p id="mensagem"></p>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>A Guilda mantém em segredo a localização de todos os aventureiros.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
